@@ -8,6 +8,7 @@ import { Footer } from "@/components/organisms/Footer";
 import { PageTransition } from "@/components/PageTransition";
 import { fontJost, fontPlayfair, fontJoti, fontInter } from "@/lib/fonts";
 import { AgeGate } from "@/components/AgeGate";
+import JSONLDScript from "@/components/SEO/JSONLD";
 import { locales, type Locale } from "@/i18n";
 import "@/app/globals.css";
 
@@ -41,12 +42,17 @@ export async function generateMetadata({
   const siteName    = seo.siteName    ?? "Liguns";
   const siteUrl     = "https://ligunsentertainment.agency";
 
+  // High-intent keywords for Nightlife Industry
+  const primaryKeywords = "Agency Entertainment Bandung, Loker Nightlife Indonesia, Manajemen Talent Hiburan";
+  const secondaryKeywords = "Terapis Spa Professional, Guest Relation Officer Bandung, Kerjasama Venue Hiburan";
+
   return {
     title: {
       default: title,
       template: `%s | ${siteName}`,
     },
     description,
+    keywords: [primaryKeywords, secondaryKeywords],
     metadataBase: new URL(siteUrl),
 
     // ── OpenGraph ──
@@ -133,6 +139,9 @@ export default async function LocaleLayout({
       dir="ltr"
       className={`${fontJost.variable} ${fontPlayfair.variable} ${fontJoti.variable} ${fontInter.variable}`}
     >
+      <head>
+        <JSONLDScript schema="all" />
+      </head>
       <body className="font-jost bg-ink text-white antialiased min-h-screen flex flex-col">
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Navbar />
