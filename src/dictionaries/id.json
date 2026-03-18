@@ -27,6 +27,25 @@
     "description": "Bergabunglah dengan Liguns, platform komunitas premium yang menghubungkan kreator, pelaku bisnis, dan penggerak perubahan di seluruh Indonesia.",
     "siteName": "Liguns"
   },
+  "auth": {
+    "login": "Masuk",
+    "register": "Daftar",
+    "logout": "Keluar",
+    "email": "Alamat Email",
+    "password": "Kata Sandi",
+    "confirmPassword": "Konfirmasi Kata Sandi",
+    "forgotPassword": "Lupa Kata Sandi?",
+    "noAccount": "Belum punya akun?",
+    "hasAccount": "Sudah punya akun?",
+    "signInGoogle": "Masuk dengan Google",
+    "sendMagicLink": "Kirim Tautan Magic",
+    "processing": "Memproses...",
+    "errorTitle": "Autentikasi Gagal",
+    "successTitle": "Selamat Datang",
+    "registerSuccess": "Akun berhasil dibuat. Silakan periksa email Anda.",
+    "emailRequired": "Email wajib diisi",
+    "emailInvalid": "Alamat email tidak valid"
+  },
   "terms": {
     "title": "Ketentuan Layanan",
     "lastUpdated": "Terakhir diperbarui: 18 Maret 2026",
@@ -154,6 +173,7 @@
   },
   "features": {
     "title": "Kenapa Pilih Liguns?",
+    "description": "Nikmati berbagai keuntungan bergabung dengan Liguns Entertainment",
     "security": {
       "title": "Keamanan & Kenyamanan",
       "desc": "Lingkungan kerja yang aman, support system solid, dan privasi terjaga untuk semua talent."
