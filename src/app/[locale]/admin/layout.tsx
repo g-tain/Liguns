@@ -1,4 +1,5 @@
 import { AdminGuard } from "@/components/admin/AdminGuard";
+import { AdminSidebar } from "@/components/admin/AdminSidebar";
 
 /**
  * src/app/[locale]/admin/layout.tsx
@@ -9,8 +10,21 @@ import { AdminGuard } from "@/components/admin/AdminGuard";
 
 export default function AdminLayout({
   children,
+  params,
 }: {
   children: React.ReactNode;
+  params: { locale: string };
 }) {
-  return <AdminGuard>{children}</AdminGuard>;
+  const { locale } = params;
+  
+  return (
+    <AdminGuard>
+      <div className="min-h-screen bg-black flex">
+        <AdminSidebar locale={locale} />
+        <main className="flex-1 min-h-screen">
+          {children}
+        </main>
+      </div>
+    </AdminGuard>
+  );
 }

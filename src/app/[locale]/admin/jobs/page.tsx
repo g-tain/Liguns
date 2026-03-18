@@ -33,7 +33,7 @@ export default async function AdminJobsPage({ params }: { params: { locale: stri
   }
 
   return (
-    <div className="min-h-screen bg-black pt-32 pb-20 px-4 md:px-8">
+    <div className="min-h-screen bg-black pb-20 px-4 md:px-8">
       <div className="max-w-7xl mx-auto space-y-12">
         
         {/* Navigation & Header */}
